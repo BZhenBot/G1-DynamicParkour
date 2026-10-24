@@ -1,0 +1,67 @@
+{
+  "purpose": "正式固定100独立完整路线，70000..70099，复用开发8/8末次候选；测试期间不调整权重/场景/门槛，全部失败计分母",
+  "course": {
+    "gap1": 0.02,
+    "gap2": 0.02,
+    "middle_half_length": 0.4,
+    "end_half_length": 0.3,
+    "half_width": 0.5,
+    "amplitude": 0.05,
+    "frequency": 0.1
+  },
+  "jump_config": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+  "jump_checkpoint": "experiments/20261009T131057156501Z-stage2-bounded-coordinate-v1-409f8d44/ppo/model_506.pt",
+  "jump_sha256": "8f835a5fadaaf2848e42a7e28d793dc5f25f220f85f857e281cdde0d2e9b0018",
+  "recovery_config": "configs/stage3_recovery_finetune_seed0_v3.json",
+  "recovery_checkpoint": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+  "recovery_sha256": "f30f533997f70cba3597b788736ee4353ecb68d82d0c70c3feff5306ea390fa0",
+  "coordinator": {
+    "middle_stable_seconds": 2.0,
+    "brake_after_alignment": true,
+    "alignment_capture_rad": 0.15,
+    "launch_heading_bound_rad": 0.35,
+    "position_before_second_jump": true,
+    "launch_point_from_middle_center_m": 0.2,
+    "launch_position_tolerance_m": 0.04,
+    "launch_stance_x_difference_m": 0.1,
+    "lane_preserving_preparation": true,
+    "maximum_launch_lateral_offset_m": 0.25,
+    "landing_lane_waypoint": true,
+    "maximum_landing_lane_offset_m": 0.3,
+    "handoff_velocity_contract": {
+      "horizontal_speed_mps": 0.6,
+      "vertical_speed_mps": 0.3,
+      "angular_speed_radps": 1.5
+    },
+    "recovery_uses_platform_center": true,
+    "end_recovery_kind": "finetuned114",
+    "handoff_maximum_backward_capture_offset_m": 0.08
+  },
+  "maximum_seconds": 24,
+  "per_leg_maximum_seconds": 12,
+  "gpu_training_budget_seconds": 21600,
+  "formal_acceptance": {
+    "episodes_minimum": 100,
+    "success_rate_minimum": 0.7,
+    "status": "frozen_for_100_independent_routes"
+  },
+  "alignment_checkpoint": "experiments/20261014T050121964612Z-v2-locomotion-turn-finetune-fixed200-aaa6766a/ppo/model_199.pt",
+  "alignment_sha256": "b2ad52f2d068f987a960ffc24685a154ad4c2c6ff2885d983247b2c4b6ce048e",
+  "alignment_config": "configs/stage1_v1.json",
+  "second_jump_checkpoint": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+  "second_jump_sha256": "320e2020f4280b523a34d7c2590b29962ee6749656aecdb82ef7c8e38599e3ed",
+  "position_checkpoint": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+  "position_sha256": "aa2e876348660af80f39db730b30a73a8dae541914cbcdcd046bdc0338cbdfd9",
+  "position_config": "configs/stage1_v1.json",
+  "end_recovery_checkpoint": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+  "end_recovery_sha256": "c73d8d38301cfd1a607a176ed985829714d87a74f2ba87b10af02f1818e312fd",
+  "time_budget_mode": "per_skill_with_preparation",
+  "preparation_maximum_seconds": 10,
+  "formal_protocol": {
+    "path": "configs/v2_formal_acceptance_protocol_v1.json",
+    "sha256": "9652040d1a00a61e85f0f18e00f572e1e937598c8671a86ee7190a6ba30c2110",
+    "id": "v2-fixed-three-platform-100-independent-v1",
+    "development_audit": "results/formal-fixtures/v2/course_independent_audit.json",
+    "development_audit_sha256": "2dd54274e2649af7000a8c7fa07d1b6144682130de2f252b6569c79a0e2e58a1"
+  }
+}

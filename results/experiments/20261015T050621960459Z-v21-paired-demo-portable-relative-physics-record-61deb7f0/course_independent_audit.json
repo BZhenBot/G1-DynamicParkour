@@ -1,0 +1,108 @@
+{
+  "audit_pass": true,
+  "scope": "独立重算每段稳定/事件、200Hz三表面安全及连续AIR、两着陆窗口、平台轨迹、reset/时间/动作/权重/日志；audit_pass表示证据一致，qualified_success必须额外满足两个AIR所在完整腾空各16连续物理无支持样本和3cm物理高度增加，旧事件前截断统计保留；不以reward判成功",
+  "run": "experiments/20261015T050436059862Z-v21-paired-v2-seed70000-replay-4e8b3ed4",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 70000,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 7.4,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 58,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 0.54,
+          "unsupported_interval_end_s": 0.8300000000000001,
+          "last_dual_source_root_height_m": 0.7858221530914307,
+          "physical_root_height_gain_m": 0.09768432378768921,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 8.08,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 56,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 19,
+          "unsupported_interval_start_s": 7.985,
+          "unsupported_interval_end_s": 8.265,
+          "last_dual_source_root_height_m": 0.788210391998291,
+          "physical_root_height_gain_m": 0.08164089918136597,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 5.8639138693077075e-05,
+        "max_velocity_error_mps": 0.001643039413196913
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 8.08
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 107.93381713867188,
+          "peak_normal_n": 1397.4588012695312,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 105.90160417556761,
+          "peak_normal_n": 1539.861572265625,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2168,
+      "failure_reason": null
+    }
+  ],
+  "qualified_successes": 1,
+  "episodes_count": 1,
+  "independent_unique_episode_seeds": 1,
+  "input_config_matches_source_snapshot": true,
+  "phase_bin_counts": {
+    "0": 1
+  },
+  "seeded_initial_phase_and_mid_episode_phase_constancy_checked": true,
+  "qualified_success_rate": 1.0,
+  "maximum_native_crosscheck_error_n": 0.0001220703125,
+  "input_sha256": {
+    "metadata.json": "add574a83c9984e691721a2cac6f77d2bfbf7592456d0f938b65e4f143ee5829",
+    "course_samples.jsonl": "dd0cc433e48332f4ac554750f2f4c5a9a60cf2fba105229637863c5e571dc9c2",
+    "course_physics_samples.jsonl": "9afb93b0f090170e9ad32c20c56cc6fc52d98c77818e74f9f2b709bbac1b5525",
+    "course_evaluation.json": "213396aeff02fa9591a042d50fcb589dab42e4ddb1ac61fb5a25c74eae82006a"
+  },
+  "formal_protocol_receipt": null,
+  "preparation_actor103_current_feature_checks": 97,
+  "handoff_capture_proxy_check_applicable": true,
+  "formal_acceptance_met": false
+}

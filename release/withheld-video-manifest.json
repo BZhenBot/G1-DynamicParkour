@@ -1,0 +1,41 @@
+{
+  "videos": [
+    {
+      "filename": "v21-V2_vs_V21_original_speed.mp4",
+      "sha256": "b8057f99db8c6547baf34c76f7588178a9457dfb32490792c6ffbb9a744b55a4",
+      "bytes": 2281675,
+      "frames": 410,
+      "duration_seconds": 16.4,
+      "decode_exit_code": 0,
+      "decode_duration_s": 0.32152117700002236,
+      "distribution_status": "WITHHELD",
+      "reason": "Original recording authorized; exact rendered robot asset rights unresolved",
+      "local_relative_path": "_withheld_assets/release-assets/v21-V2_vs_V21_original_speed.mp4"
+    },
+    {
+      "filename": "v21-course_episode_000.mp4",
+      "sha256": "eb54022604cc07c16bb691f60b3807c647701e66d9fbd4e861dacb92d0642471",
+      "bytes": 778801,
+      "frames": 271,
+      "duration_seconds": 10.84,
+      "decode_exit_code": 0,
+      "decode_duration_s": 0.19083662899993215,
+      "distribution_status": "WITHHELD",
+      "reason": "Original recording authorized; exact rendered robot asset rights unresolved",
+      "local_relative_path": "_withheld_assets/release-assets/v21-course_episode_000.mp4"
+    },
+    {
+      "filename": "v22-course_episode_000.mp4",
+      "sha256": "db12c83175ac3f98d3205df77b55a908883fd7d6c2f99e6849f2655ff3913e58",
+      "bytes": 756380,
+      "frames": 264,
+      "duration_seconds": 10.56,
+      "decode_exit_code": 0,
+      "decode_duration_s": 0.18375842099999318,
+      "distribution_status": "WITHHELD",
+      "reason": "Original recording authorized; exact rendered robot asset rights unresolved",
+      "local_relative_path": "_withheld_assets/release-assets/v22-course_episode_000.mp4"
+    }
+  ],
+  "not_in_allowed_release_assets": true
+}

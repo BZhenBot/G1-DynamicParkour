@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software and the upstream frameworks if used in research."
+title: "G1-DynamicParkour: Evidence-Driven Dynamic-Platform Parkour in Simulation"
+type: software
+authors:
+  - name: "G1-DynamicParkour contributors"
+version: "2.2.0-rc.1"
+license: MIT
+abstract: >-
+  Local public-release candidate for a Unitree G1 simulation research project.
+  PPO subpolicies and a deterministic coordinator execute two real jumps,
+  with separate contact and airborne-event audits. V3 features are excluded.
+keywords:
+  - reinforcement learning
+  - humanoid robotics
+  - MuJoCo
+  - reproducibility

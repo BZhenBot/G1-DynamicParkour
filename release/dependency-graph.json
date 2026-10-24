@@ -1,0 +1,422 @@
+[
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "jump_config",
+    "dependency": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "jump_checkpoint",
+    "dependency": "experiments/20261012T050638742882Z-gap015-qualified-handoff-subtask-finetune100-v1-79123cee/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "recovery_config",
+    "dependency": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "recovery_checkpoint",
+    "dependency": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "alignment_checkpoint",
+    "dependency": "experiments/20261015T034634495245Z-v21-torso-stable-preparation-fixed200-5a86fbe4/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "alignment_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "second_jump_checkpoint",
+    "dependency": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "position_checkpoint",
+    "dependency": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "position_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "end_recovery_checkpoint",
+    "dependency": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "formal_protocol.path",
+    "dependency": "configs/v22_formal_acceptance_protocol_gap010_limited064_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+    "field": "formal_protocol.development_audit",
+    "dependency": "results/formal-fixtures/v22/course_independent_audit.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "jump_config",
+    "dependency": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "jump_checkpoint",
+    "dependency": "experiments/20261009T131057156501Z-stage2-bounded-coordinate-v1-409f8d44/ppo/model_506.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "recovery_config",
+    "dependency": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "recovery_checkpoint",
+    "dependency": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "alignment_checkpoint",
+    "dependency": "experiments/20261015T034634495245Z-v21-torso-stable-preparation-fixed200-5a86fbe4/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "alignment_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "second_jump_checkpoint",
+    "dependency": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "position_checkpoint",
+    "dependency": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "position_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "end_recovery_checkpoint",
+    "dependency": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "formal_protocol.path",
+    "dependency": "configs/v21_formal_acceptance_protocol_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_formal100_v1.json",
+    "field": "formal_protocol.development_audit",
+    "dependency": "results/formal-fixtures/v21/course_independent_audit.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "jump_config",
+    "dependency": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "jump_checkpoint",
+    "dependency": "experiments/20261012T050638742882Z-gap015-qualified-handoff-subtask-finetune100-v1-79123cee/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "recovery_config",
+    "dependency": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "recovery_checkpoint",
+    "dependency": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "alignment_checkpoint",
+    "dependency": "experiments/20261015T034634495245Z-v21-torso-stable-preparation-fixed200-5a86fbe4/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "alignment_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "second_jump_checkpoint",
+    "dependency": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "position_checkpoint",
+    "dependency": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "position_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "field": "end_recovery_checkpoint",
+    "dependency": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "field": "standing_prior_checkpoint",
+    "dependency": "experiments/20261008T154302611628Z-stage0-standing-v4-f1f2216e/ppo/model_799.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "field": "landing_reset_dataset",
+    "dependency": "data/landing_state_dataset.json",
+    "included": true,
+    "scope": "training-only data"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "jump_config",
+    "dependency": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "jump_checkpoint",
+    "dependency": "experiments/20261009T131057156501Z-stage2-bounded-coordinate-v1-409f8d44/ppo/model_506.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "recovery_config",
+    "dependency": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "recovery_checkpoint",
+    "dependency": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "alignment_checkpoint",
+    "dependency": "experiments/20261014T050121964612Z-v2-locomotion-turn-finetune-fixed200-aaa6766a/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "alignment_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "second_jump_checkpoint",
+    "dependency": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "position_checkpoint",
+    "dependency": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "position_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "end_recovery_checkpoint",
+    "dependency": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "formal_protocol.path",
+    "dependency": "configs/v2_formal_acceptance_protocol_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v2_course_formal100_v1.json",
+    "field": "formal_protocol.development_audit",
+    "dependency": "results/formal-fixtures/v2/course_independent_audit.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "jump_config",
+    "dependency": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "jump_checkpoint",
+    "dependency": "experiments/20261009T131057156501Z-stage2-bounded-coordinate-v1-409f8d44/ppo/model_506.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "recovery_config",
+    "dependency": "configs/stage3_recovery_finetune_seed0_v3.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "recovery_checkpoint",
+    "dependency": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "alignment_checkpoint",
+    "dependency": "experiments/20261015T034634495245Z-v21-torso-stable-preparation-fixed200-5a86fbe4/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "alignment_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "second_jump_checkpoint",
+    "dependency": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "position_checkpoint",
+    "dependency": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "position_config",
+    "dependency": "configs/stage1_v1.json",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/v21_course_torso199_capture020_v1.json",
+    "field": "end_recovery_checkpoint",
+    "dependency": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "field": "standing_prior_checkpoint",
+    "dependency": "experiments/20261008T154302611628Z-stage0-standing-v4-f1f2216e/ppo/model_799.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  },
+  {
+    "config": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+    "field": "jump_prior_checkpoint",
+    "dependency": "experiments/20261009T072722375357Z-stage2-target-landing-v1-974b34d5/ppo/model_200.pt",
+    "included": true,
+    "scope": "runtime/protocol/initialization"
+  }
+]

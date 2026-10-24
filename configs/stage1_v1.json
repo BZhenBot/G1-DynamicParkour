@@ -1,0 +1,34 @@
+{
+    "task":  "walking",
+    "seed":  0,
+    "num_envs":  256,
+    "episode_length_s":  12,
+    "velocity_x":  [
+                       0.2,
+                       0.3
+                   ],
+    "hidden_dims":  [
+                        256,
+                        128
+                    ],
+    "initial_std":  0.5,
+    "rollout_steps":  24,
+    "iterations":  500,
+    "save_interval":  100,
+    "standing_alive_rate":  1,
+    "action_smoothing_scale":  0.2,
+    "standing_pose_std":  0.2,
+    "purpose":  "Stage1 fixed-horizon static-gap stepping and final stop training; current-state waypoint; independent evaluation required",
+    "entropy_coef":  0.001,
+    "linear_tracking_std":  0.25,
+    "angular_tracking_std":  0.70710678118654757,
+    "root_angular_velocity_cost":  1,
+    "world_forward_heading_hold":  true,
+    "linear_tracking_weight_scale":  2,
+    "foot_slip_weight_scale":  10,
+    "foot_clearance_weight_scale":  2,
+    "air_time_rate":  1,
+    "gap":  0.02,
+    "max_speed":  0.25,
+    "terminate_on_success":  false
+}

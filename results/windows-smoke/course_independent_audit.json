@@ -1,0 +1,157 @@
+{
+  "audit_pass": true,
+  "scope": "独立重算每段稳定/事件、200Hz三表面安全及连续AIR、两着陆窗口、平台轨迹、reset/时间/动作/权重/日志；audit_pass表示证据一致，qualified_success必须额外满足两个AIR所在完整腾空各16连续物理无支持样本和3cm物理高度增加，旧事件前截断统计保留；不以reward判成功",
+  "run": "experiments/20261024T031921181205Z-public-windows-own-source-02403411",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 98000,
+      "scalar_success": false,
+      "qualified_success": false,
+      "time_budget_pass": true,
+      "second_skill_start_s": 7.12,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": false,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 59,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 18,
+          "unsupported_interval_start_s": 0.53,
+          "unsupported_interval_end_s": 0.8250000000000001,
+          "last_dual_source_root_height_m": 0.7765347361564636,
+          "physical_root_height_gain_m": 0.09774523973464966,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 5.8441887457114094e-06,
+        "max_velocity_error_mps": 0.0009372150736167255
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 106.30329723358157,
+          "peak_normal_n": 1385.6385498046875,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 1,
+          "impulse_ns": 1.2146738433837891,
+          "peak_normal_n": 242.9347686767578,
+          "window_complete": false
+        }
+      },
+      "physics_samples": 1552,
+      "failure_reason": "leg2:premature_target_contact"
+    }
+  ],
+  "qualified_successes": 0,
+  "episodes_count": 1,
+  "independent_unique_episode_seeds": 1,
+  "input_config_matches_source_snapshot": true,
+  "phase_bin_counts": {
+    "0": 1
+  },
+  "seeded_initial_phase_and_mid_episode_phase_constancy_checked": true,
+  "qualified_success_rate": 0.0,
+  "maximum_native_crosscheck_error_n": 6.103515625e-05,
+  "input_sha256": {
+    "metadata.json": "ac3310cd7bccfc2882703ac64425c5f0f578d4f679ac1e89bac8160f137ece9d",
+    "course_samples.jsonl": "11b79cd0b6fe0b45392e57c5eb9d5560025609683bde8328f0342b0c3eee7cdd",
+    "course_physics_samples.jsonl": "11ac1ba1c514ca823715b9ddf5ccf1c4a15763491a115d556b55745e1e835fdc",
+    "course_evaluation.json": "17465c5c4da3a9bdd52392a70eabed68fbd584f1cb32de2d4dc17eb382116b9a",
+    "course_contact_manifest.json": "bb58a3d599fb54828f7c53e4f832b577597afbff49624c4e3b2e305ed7929fa6"
+  },
+  "formal_protocol_receipt": null,
+  "preparation_actor103_current_feature_checks": 84,
+  "handoff_capture_proxy_check_applicable": true,
+  "formal_acceptance_met": false,
+  "measured_collision_geometry": {
+    "verified_compiled_box_sizes": true,
+    "platform_collision_boxes": {
+      "start": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.4,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "middle": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.32,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.3,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gap1_range_m": [
+      0.10000000774860379,
+      0.10000000774860379
+    ],
+    "gap2_range_m": [
+      0.10000002861022939,
+      0.10000002861022939
+    ],
+    "samples": 388
+  }
+}

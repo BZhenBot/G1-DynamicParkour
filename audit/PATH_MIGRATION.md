@@ -1,0 +1,9 @@
+# 公开路径迁移记录
+
+核心控制/物理源码保持原文件内容；新增打包元数据、权重恢复工具与文档。assets/platform_contact.xml为原创箱体回归模型，不含G1网格。
+
+公开副本清理原机器账户路径，原始证据不改。stage3_recovery_finetune_seed0_v3.json的landing_reset_dataset改为公开data下的同源状态数据；仅训练初始化用途，运行构造使用的先验/部署权重未变。
+
+三份正式配置中formal_protocol.development_audit迁移到results/formal-fixtures，开发审计run也改为公开相对目录，development_audit_sha256按迁移后文件重算。原protocol文件和物理标准保持，控制配置不变，formal100 dry-run已验证开发候选相等及六部署权重SHA。原验收报告proof_sha256保留原语义，公开文件SHA见逐文件表。
+
+以上修改只发生在独立公开候选，未写回原项目。重现历史训练需要另行取得未打包的父权重/reset bank；不会用路径迁移掩盖缺失的训练素材。

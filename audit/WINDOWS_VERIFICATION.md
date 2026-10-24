@@ -1,0 +1,11 @@
+# Windows本地交付实测
+
+真实目标为用户指定的Windows公开发行目录，不是WSL指向的快捷方式。初次选择性复制133个公开文件，与独立WSL候选逐SHA一致（0不一致），没有复制venv、缓存、vendor或原Git。
+
+使用同一新建独立Python3.10环境，在Windows副本经WSL挂载的目录执行权重恢复和完整回放。包装器实查package_source来自该副本自身src，而不是原项目或先前editable源。种子98000一条完整路线进程exit0，独立200Hz audit_pass=true，但qualified_successes=0，任务0/1不合格，失败为leg2:premature_target_contact（第二跳过早接触目标）。audit_pass只表示日志/判据重算一致，不表示任务成功。
+
+WSL候选同种子先前1/1合格，Windows副本0/1不合格；文件SHA一致，不能据单次配对把差异归因于文件系统。重复运行数值差异及原因待调查，不能承诺按种子重现单次成功。本次未重跑100正式回合。原始命令、时间、stdout/stderr和新完整物理日志保存在_local_review/windows-tests与windows-runtime-experiments。
+
+三个待授权完整视频均逐帧解码exit0，原速单段V2.1为271帧、V2.2为264帧，并排比较410帧；版权状态仍WITHHELD，技术可播放不等于允许公开。其SHA与长度见release/withheld-video-manifest.json。
+
+最终新Git、逐文件SHA、ignored隔离验证与原工作区保护复查见本地_local_review/FINAL_VERIFICATION.json。没有创建远端仓库或执行任何上传。

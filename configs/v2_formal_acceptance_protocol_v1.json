@@ -1,0 +1,36 @@
+{
+    "protocol_id":  "v2-fixed-three-platform-100-independent-v1",
+    "status":  "预登记，候选待开发验证后冻结",
+    "episodes":  100,
+    "seed_start":  70000,
+    "seed_end":  70099,
+    "phase_bins":  8,
+    "phase_rule":  "2*pi*((episode%8)+random.Random(seed).random())/8",
+    "joint_position_reset_noise_rad":  [
+                                           -0.01,
+                                           0.01
+                                       ],
+    "dev_gate":  "独立核验新八开发路线至少6/8后冻结候选；训练子任务不代替此闸门",
+    "success_rate_minimum":  0.7,
+    "minimum_jumps":  2,
+    "airborne_minimum_consecutive_physics_samples":  16,
+    "physics_dt_seconds":  0.005,
+    "airborne_minimum_height_gain_m":  0.03,
+    "landing_stable_seconds":  2,
+    "whole_route_limit_seconds":  24,
+    "preparation_limit_seconds":  10,
+    "per_jump_recovery_limit_seconds":  12,
+    "mid_episode_physical_reset_allowed":  false,
+    "checkpoint_selection":  "固定末次权重，正式100期间禁止换权重/场景/门槛；全部失败计入分母",
+    "scene":  {
+                  "gap2":  0.02,
+                  "amplitude":  0.05,
+                  "end_half_length":  0.3,
+                  "gap1":  0.02,
+                  "middle_half_length":  0.4,
+                  "frequency":  0.1,
+                  "half_width":  0.5
+              },
+    "evidence":  "每回合唯一seed、起点一次reset、全部三面200Hz接触/安全、完整腾空/两着陆/2s、权重SHA、平台tracking、时间协议和独立审计",
+    "scope":  "固定三平台V2首版，两个2cm几何间隙但必须真实跳跃；不宣称随机地形/大间隙/实机鲁棒性"
+}

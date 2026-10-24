@@ -1,0 +1,125 @@
+{
+  "task": "two_real_jumps_course",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 98000,
+      "success": false,
+      "duration_s": 7.76,
+      "control_steps": 388,
+      "events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "start_supported",
+          "time_s": 0.24
+        },
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "takeoff",
+          "time_s": 0.54
+        },
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62
+        },
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "target_contact",
+          "time_s": 0.84
+        },
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "stable_success",
+          "time_s": 3.96
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "start_supported",
+          "time_s": 4.08
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "takeoff",
+          "time_s": 7.72
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "failed",
+          "time_s": 7.76
+        }
+      ],
+      "failure_reason": "leg2:premature_target_contact",
+      "fell": false,
+      "illegal_contact": false,
+      "phase_bin": 0,
+      "platform_initial_phase_rad": 0.7199302315711975,
+      "reset_count": 2,
+      "mid_episode_resets": 0,
+      "coordinator_transitions": [
+        {
+          "time_s": 0.9,
+          "transition": "recover_middle",
+          "leg": 0
+        },
+        {
+          "time_s": 3.98,
+          "transition": "align_middle",
+          "leg": 0
+        },
+        {
+          "time_s": 5.66,
+          "transition": "final_settle_middle",
+          "leg": 0
+        },
+        {
+          "time_s": 7.12,
+          "transition": "jump_end",
+          "leg": 1
+        }
+      ],
+      "reward_terms": {
+        "track_linear_velocity": 0.0,
+        "track_angular_velocity": 7.481467247009277,
+        "upright": 5.503561973571777,
+        "pose": 3.3826563358306885,
+        "body_ang_vel": -1.108536958694458,
+        "angular_momentum": -0.4447755813598633,
+        "dof_pos_limits": -0.12346900254487991,
+        "action_rate_l2": -0.34610694646835327,
+        "air_time": 0.0,
+        "foot_clearance": 0.0,
+        "self_collisions": -1.3599998950958252,
+        "alive": 7.759993553161621,
+        "root_angular_velocity_l2": -21.77879524230957
+      },
+      "final_root_position": [
+        1.124300241470337,
+        -0.051297031342983246,
+        0.8357719779014587
+      ]
+    }
+  ],
+  "successes": 0,
+  "episodes_count": 1,
+  "success_rate": 0.0,
+  "state_read_only_checks": 388,
+  "elapsed_seconds_monotonic": 17.80074958600005,
+  "training_seconds_this_run": 0
+}

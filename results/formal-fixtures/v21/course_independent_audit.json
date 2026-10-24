@@ -1,0 +1,682 @@
+{
+  "audit_pass": true,
+  "scope": "独立重算每段稳定/事件、200Hz三表面安全及连续AIR、两着陆窗口、平台轨迹、reset/时间/动作/权重/日志；audit_pass表示证据一致，qualified_success必须额外满足两个AIR所在完整腾空各16连续物理无支持样本和3cm物理高度增加，旧事件前截断统计保留；不以reward判成功",
+  "run": "results/formal-fixtures/v21",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 76000,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 7.28,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 56,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 14,
+          "unsupported_interval_start_s": 0.55,
+          "unsupported_interval_end_s": 0.8300000000000001,
+          "last_dual_source_root_height_m": 0.7822670936584473,
+          "physical_root_height_gain_m": 0.09721881151199341,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.98,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 52,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 7.88,
+          "unsupported_interval_end_s": 8.14,
+          "last_dual_source_root_height_m": 0.7878133654594421,
+          "physical_root_height_gain_m": 0.07443052530288696,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 5.460405340955085e-05,
+        "max_velocity_error_mps": 0.0019906856284609108
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.98
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 109.35358104705809,
+          "peak_normal_n": 1405.1763916015625,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 105.91915626525879,
+          "peak_normal_n": 1518.7008056640625,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2144,
+      "failure_reason": null
+    },
+    {
+      "episode": 1,
+      "seed": 76001,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 7.0600000000000005,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 59,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 13,
+          "unsupported_interval_start_s": 0.535,
+          "unsupported_interval_end_s": 0.8300000000000001,
+          "last_dual_source_root_height_m": 0.7482733726501465,
+          "physical_root_height_gain_m": 0.1296156644821167,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.76,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 51,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 19,
+          "unsupported_interval_start_s": 7.665,
+          "unsupported_interval_end_s": 7.92,
+          "last_dual_source_root_height_m": 0.7577497959136963,
+          "physical_root_height_gain_m": 0.09837085008621216,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 4.148662210906248e-05,
+        "max_velocity_error_mps": 0.0030112300776817466
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.76
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 111.37524116516116,
+          "peak_normal_n": 1245.603271484375,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 108.15883476257325,
+          "peak_normal_n": 1487.1077880859375,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2104,
+      "failure_reason": null
+    },
+    {
+      "episode": 2,
+      "seed": 76002,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 9.02,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 58,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 0.54,
+          "unsupported_interval_end_s": 0.8300000000000001,
+          "last_dual_source_root_height_m": 0.774117112159729,
+          "physical_root_height_gain_m": 0.1065409779548645,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 9.700000000000001,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 51,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 19,
+          "unsupported_interval_start_s": 9.605,
+          "unsupported_interval_end_s": 9.86,
+          "last_dual_source_root_height_m": 0.7875322103500366,
+          "physical_root_height_gain_m": 0.07424741983413696,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 4.697746551135529e-05,
+        "max_velocity_error_mps": 0.001765994006690062
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 9.700000000000001
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 107.18551500320437,
+          "peak_normal_n": 1090.008056640625,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 92.44308265686035,
+          "peak_normal_n": 1335.0020751953125,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2468,
+      "failure_reason": null
+    },
+    {
+      "episode": 3,
+      "seed": 76003,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.88,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 60,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 13,
+          "unsupported_interval_start_s": 0.535,
+          "unsupported_interval_end_s": 0.835,
+          "last_dual_source_root_height_m": 0.7605777382850647,
+          "physical_root_height_gain_m": 0.12375116348266602,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.54,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 54,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 17,
+          "unsupported_interval_start_s": 7.455,
+          "unsupported_interval_end_s": 7.7250000000000005,
+          "last_dual_source_root_height_m": 0.7747207283973694,
+          "physical_root_height_gain_m": 0.08718085289001465,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 4.9228892288949444e-05,
+        "max_velocity_error_mps": 0.00264868509173242
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.54
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 112.01559665679932,
+          "peak_normal_n": 1307.2733764648438,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 106.38894149780273,
+          "peak_normal_n": 1468.5390625,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2044,
+      "failure_reason": null
+    },
+    {
+      "episode": 4,
+      "seed": 76004,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.78,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 56,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 0.54,
+          "unsupported_interval_end_s": 0.8200000000000001,
+          "last_dual_source_root_height_m": 0.7894246578216553,
+          "physical_root_height_gain_m": 0.08994370698928833,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.44,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 54,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 18,
+          "unsupported_interval_start_s": 7.3500000000000005,
+          "unsupported_interval_end_s": 7.62,
+          "last_dual_source_root_height_m": 0.7890512347221375,
+          "physical_root_height_gain_m": 0.06874716281890869,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 7.07050740682072e-05,
+        "max_velocity_error_mps": 0.003127697336003113
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.44
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 106.30474170684815,
+          "peak_normal_n": 1176.317138671875,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 109.91281610488893,
+          "peak_normal_n": 1317.6028594970703,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2044,
+      "failure_reason": null
+    },
+    {
+      "episode": 5,
+      "seed": 76005,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.98,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 58,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 0.54,
+          "unsupported_interval_end_s": 0.8300000000000001,
+          "last_dual_source_root_height_m": 0.7558732032775879,
+          "physical_root_height_gain_m": 0.12195158004760742,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.66,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 51,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 17,
+          "unsupported_interval_start_s": 7.575,
+          "unsupported_interval_end_s": 7.83,
+          "last_dual_source_root_height_m": 0.7584723234176636,
+          "physical_root_height_gain_m": 0.11080104112625122,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 6.288943416939488e-05,
+        "max_velocity_error_mps": 0.0025732069517147814
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.66
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 109.28663679122927,
+          "peak_normal_n": 1056.4571228027344,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 103.98225448608396,
+          "peak_normal_n": 1286.70263671875,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2068,
+      "failure_reason": null
+    },
+    {
+      "episode": 6,
+      "seed": 76006,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.96,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 57,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 0.54,
+          "unsupported_interval_end_s": 0.8250000000000001,
+          "last_dual_source_root_height_m": 0.7596047520637512,
+          "physical_root_height_gain_m": 0.11820018291473389,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.66,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 48,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 18,
+          "unsupported_interval_start_s": 7.57,
+          "unsupported_interval_end_s": 7.8100000000000005,
+          "last_dual_source_root_height_m": 0.7932918667793274,
+          "physical_root_height_gain_m": 0.06484836339950562,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 4.06683131993317e-05,
+        "max_velocity_error_mps": 0.002342196698611281
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.64
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.66
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 108.33320396423336,
+          "peak_normal_n": 1264.3879089355469,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 99.86569843292234,
+          "peak_normal_n": 1371.29296875,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2060,
+      "failure_reason": null
+    },
+    {
+      "episode": 7,
+      "seed": 76007,
+      "scalar_success": false,
+      "qualified_success": false,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.54,
+      "physical_failure_200hz": true,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 58,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 13,
+          "unsupported_interval_start_s": 0.535,
+          "unsupported_interval_end_s": 0.8250000000000001,
+          "last_dual_source_root_height_m": 0.7612596750259399,
+          "physical_root_height_gain_m": 0.11990678310394287,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.2,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 56,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 7.1000000000000005,
+          "unsupported_interval_end_s": 7.38,
+          "last_dual_source_root_height_m": 0.7693513035774231,
+          "physical_root_height_gain_m": 0.09476786851882935,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 5.9233344950178346e-05,
+        "max_velocity_error_mps": 0.0029523548621145654
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.6
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.2
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 105.50928939819337,
+          "peak_normal_n": 1351.603515625,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 108.94091838836671,
+          "peak_normal_n": 1191.2376708984375,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 1748,
+      "failure_reason": "fallen"
+    }
+  ],
+  "qualified_successes": 7,
+  "episodes_count": 8,
+  "independent_unique_episode_seeds": 8,
+  "input_config_matches_source_snapshot": true,
+  "phase_bin_counts": {
+    "0": 1,
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1
+  },
+  "seeded_initial_phase_and_mid_episode_phase_constancy_checked": true,
+  "qualified_success_rate": 0.875,
+  "maximum_native_crosscheck_error_n": 0.000244140625,
+  "input_sha256": {
+    "metadata.json": "3e75ab89e7c369cc012b2db32d305e3257f7ee5dcab02cc86090a05fdd37c313",
+    "course_samples.jsonl": "2c143c7ce0410bb6f7e52a85920e87488525cbeba2f7c31a7157a8f117cdfc5d",
+    "course_physics_samples.jsonl": "b607b8a649db3ea432a43e88568d76248099031c9c6a43771204bac125f8c8d5",
+    "course_evaluation.json": "43333a72f55bd5dd6c4f3bcfa8fa3ffddb1948d202ca322e47cec951ad7ac81b"
+  },
+  "formal_protocol_receipt": null,
+  "preparation_actor103_current_feature_checks": 712,
+  "handoff_capture_proxy_check_applicable": true,
+  "formal_acceptance_met": false
+}

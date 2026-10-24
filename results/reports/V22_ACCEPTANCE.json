@@ -1,0 +1,175 @@
+{
+  "status": "accepted_v22_complex_simulation",
+  "goal_status": "active_windows_delivery_pending",
+  "formal_run": "experiments/20261015T142903216154Z-v22-gap010-limited064-formal100-independent-course-52bfa645",
+  "formal_audit": "experiments/20261015T152117973123Z-v22-gap010-formal100-independent-physics-0e97b5ec/course_independent_audit.json",
+  "motion_metrics": "experiments/20261015T152151479053Z-v22-gap010-formal100-corrected-motion-9f93b0a1/motion_metrics.json",
+  "episodes": 100,
+  "qualified_successes": 76,
+  "success_rate": 0.76,
+  "formal_protocol": {
+    "protocol_id": "v22-complex-three-platform-100-independent-gap010_limited064-v1",
+    "protocol_sha256": "7d980344172275de59347075bac3c36fb1bef99d307a3a6faa0ae4cdd0d92b78",
+    "episodes": 100,
+    "seed_start": 98000,
+    "seed_end": 98099,
+    "development_audit_sha256": "591736ed3b44645651d9af7a4d3b66de611bb8b4a70c86d53b6274a4738c64a4",
+    "candidate_matches_development": true,
+    "all_six_role_checkpoint_hashes_checked": true
+  },
+  "scene": {
+    "gap1": 0.1,
+    "gap2": 0.1,
+    "middle_half_length": 0.32,
+    "end_half_length": 0.3,
+    "half_width": 0.5,
+    "amplitude": 0.05,
+    "frequency": 0.1
+  },
+  "additional_development_confirmation": {
+    "status": "two_eight_route_cohorts_physically_audited",
+    "candidate_config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+    "audit_files": [
+      "experiments/20261015T141737266794Z-v22-gap010-limited-middle064-eight-independent-physics-265704ce/course_independent_audit.json",
+      "experiments/20261015T142603811687Z-v22-gap010-limited-middle064-confirmation-eight-independent-66da9f33/course_independent_audit.json"
+    ],
+    "proofs": [
+      {
+        "path": "experiments/20261015T141737266794Z-v22-gap010-limited-middle064-eight-independent-physics-265704ce/course_independent_audit.json",
+        "sha256": "bb462d17a9b26c2553bdb16c3f9bb5df2e26bd5286a46f5d97f61c277e3339ae",
+        "episodes": 8,
+        "qualified_successes": 6
+      },
+      {
+        "path": "experiments/20261015T142603811687Z-v22-gap010-limited-middle064-confirmation-eight-independent-66da9f33/course_independent_audit.json",
+        "sha256": "591736ed3b44645651d9af7a4d3b66de611bb8b4a70c86d53b6274a4738c64a4",
+        "episodes": 8,
+        "qualified_successes": 6
+      }
+    ],
+    "independent_unique_seeds": [
+      97000,
+      97001,
+      97002,
+      97003,
+      97004,
+      97005,
+      97006,
+      97007,
+      97500,
+      97501,
+      97502,
+      97503,
+      97504,
+      97505,
+      97506,
+      97507
+    ],
+    "qualified_successes": 12,
+    "episodes": 16,
+    "scope": "开发确认，不代替正式新100；不修改物理标准，无新训练",
+    "critical_control_source_sha256_equal": true,
+    "candidate_config_sha256": "ed2b34b42a6604d791a215c28c490dabf2b6917b8eb6a206ebb410b9b680946c"
+  },
+  "complexity": "两处真实间隙10/10cm；中台长64cm宽100cm；终台长60cm宽100cm；V2为2/2cm、80×100cm中台和60×100cm终台；动态A5cm/f0.1Hz",
+  "larger_gap_limitation": "扩大平台中心距离的10/15cm布局仍保留真实失败；当前有限支撑布局不等于最大跳远距离提升，也不宣称随机高低地形、视觉或实机",
+  "original_physical_criteria_preserved": true,
+  "actual_collision_geometry": {
+    "verified_compiled_box_sizes": true,
+    "platform_collision_boxes": {
+      "start": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.4,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "middle": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.32,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.3,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gap1_range_m": [
+      0.10000000774860379,
+      0.10000000774860379
+    ],
+    "gap2_range_m": [
+      0.10000002861022939,
+      0.10000002861022939
+    ],
+    "samples": 53189
+  },
+  "same_frozen_candidate_control_config_and_source_verified": true,
+  "failure_counts": {
+    "fallen": 17,
+    "leg1:other_support": 2,
+    "middle_preparation_timeout": 4,
+    "200hz_physical_failure": 1
+  },
+  "video_run": "experiments/20261015T152203118020Z-v22-gap010-limited064-real-success-video-d42716fc",
+  "video_audit": "experiments/20261015T152307689116Z-v22-gap010-limited064-demo-independent-physics-465d74ac/course_independent_audit.json",
+  "video_decode": "experiments/20261015T152313265893Z-v22-gap010-limited064-demo-full-real-decode-1f803ef1/video_validation.json",
+  "visual_review": "reports/V22_VIDEO_VISUAL_QA_gap010_limited064.md",
+  "proof_sha256": {
+    "experiments/20261015T143002225806Z-v22-gap010-formal100-terminal-postprocess-930d3a7c/postprocess_receipt.json": "621c6c0a852994f5fc96cc2ad0440c18ac8f3ba5e7f6f2098aeae0d5f53a8f84",
+    "experiments/20261015T152117973123Z-v22-gap010-formal100-independent-physics-0e97b5ec/course_independent_audit.json": "4e3b8133fe6e45f5672655341b75bb4391a1798bb1eb1693f59d6c28c4c887d6",
+    "experiments/20261015T142903216154Z-v22-gap010-limited064-formal100-independent-course-52bfa645/course_evaluation_config.json": "101f9f9d9574e3fdbe653386284d83d350cbd89062c597e52d8fc48f446260df",
+    "experiments/20261015T152307689116Z-v22-gap010-limited064-demo-independent-physics-465d74ac/course_independent_audit.json": "7fc9d932f0fdaae5c53f4f1f6ce5e2e0de35818f83dec394c7fbb1bc27f9f7a0",
+    "experiments/20261015T152203118020Z-v22-gap010-limited064-real-success-video-d42716fc/course_evaluation_config.json": "5350b739c0072e8196691ab2bfa7d4628b712d242a0ad5db4062db34f534acf5",
+    "experiments/20261015T142903216154Z-v22-gap010-limited064-formal100-independent-course-52bfa645/metadata.json": "fb45ccca1ddd94d961f7749a9ce9ef7c0c3f6019c516c6012b0bae6e8541fb19",
+    "experiments/20261015T152203118020Z-v22-gap010-limited064-real-success-video-d42716fc/metadata.json": "2b000c39bcf549e53ea57ce29ee50570f39b23361ee715b489bdc1cccb9d0a3c",
+    "experiments/20261015T152313265893Z-v22-gap010-limited064-demo-full-real-decode-1f803ef1/video_validation.json": "73173b027af09b733a360fa0e10e7748a8c3d2ed24ef326f9dd502df0be22a21",
+    "experiments/20261015T152203118020Z-v22-gap010-limited064-real-success-video-d42716fc/course_evaluation.json": "ee6fcdcc1c23e8e9d3d38e7f05730b1df41c4782b84b9a43a90585355d2e8af9",
+    "reports/V22_VIDEO_VISUAL_QA_gap010_limited064.md": "f1945d516e0060f2d98c610a5a06e9742462643342975584fc838acfbdb4ea30",
+    "reports/V22_GAP010_CONFIRMATION.json": "b402508a94032e6e5f7a4e506b0edfacdc98a0db1c5920fe8f82073e069194f5",
+    "experiments/20261015T141737266794Z-v22-gap010-limited-middle064-eight-independent-physics-265704ce/course_independent_audit.json": "bb462d17a9b26c2553bdb16c3f9bb5df2e26bd5286a46f5d97f61c277e3339ae",
+    "experiments/20261015T142603811687Z-v22-gap010-limited-middle064-confirmation-eight-independent-66da9f33/course_independent_audit.json": "591736ed3b44645651d9af7a4d3b66de611bb8b4a70c86d53b6274a4738c64a4"
+  },
+  "windows_final_delivery": "待实际复制/SHA/真正解包/Windows副本视频和权重及自身src回放后完成"
+}

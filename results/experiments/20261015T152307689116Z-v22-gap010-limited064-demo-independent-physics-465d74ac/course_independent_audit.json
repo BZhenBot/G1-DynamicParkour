@@ -1,0 +1,180 @@
+{
+  "audit_pass": true,
+  "scope": "独立重算每段稳定/事件、200Hz三表面安全及连续AIR、两着陆窗口、平台轨迹、reset/时间/动作/权重/日志；audit_pass表示证据一致，qualified_success必须额外满足两个AIR所在完整腾空各16连续物理无支持样本和3cm物理高度增加，旧事件前截断统计保留；不以reward判成功",
+  "run": "experiments/20261015T152203118020Z-v22-gap010-limited064-real-success-video-d42716fc",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 97000,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 7.16,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 55,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 17,
+          "unsupported_interval_start_s": 0.535,
+          "unsupported_interval_end_s": 0.81,
+          "last_dual_source_root_height_m": 0.7784176468849182,
+          "physical_root_height_gain_m": 0.0894925594329834,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.84,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 52,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 18,
+          "unsupported_interval_start_s": 7.75,
+          "unsupported_interval_end_s": 8.01,
+          "last_dual_source_root_height_m": 0.7872561812400818,
+          "physical_root_height_gain_m": 0.075286865234375,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 6.843725738539877e-05,
+        "max_velocity_error_mps": 0.0026895724165606864
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.84
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 101.52197696685789,
+          "peak_normal_n": 1339.9141845703125,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 104.16064273834226,
+          "peak_normal_n": 1347.92919921875,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2112,
+      "failure_reason": null
+    }
+  ],
+  "qualified_successes": 1,
+  "episodes_count": 1,
+  "independent_unique_episode_seeds": 1,
+  "input_config_matches_source_snapshot": true,
+  "phase_bin_counts": {
+    "0": 1
+  },
+  "seeded_initial_phase_and_mid_episode_phase_constancy_checked": true,
+  "qualified_success_rate": 1.0,
+  "maximum_native_crosscheck_error_n": 0.0001220703125,
+  "input_sha256": {
+    "metadata.json": "2b000c39bcf549e53ea57ce29ee50570f39b23361ee715b489bdc1cccb9d0a3c",
+    "course_samples.jsonl": "3cc1b9a077561904059e95cc89f0690505e7b0eb4a3ac92dc0e4f95b11a5e12b",
+    "course_physics_samples.jsonl": "75bdd892b5de483283d24feabc929f1df75a00650409ddbd42c35f9a87586261",
+    "course_evaluation.json": "ee6fcdcc1c23e8e9d3d38e7f05730b1df41c4782b84b9a43a90585355d2e8af9",
+    "course_contact_manifest.json": "bb58a3d599fb54828f7c53e4f832b577597afbff49624c4e3b2e305ed7929fa6"
+  },
+  "formal_protocol_receipt": null,
+  "preparation_actor103_current_feature_checks": 81,
+  "handoff_capture_proxy_check_applicable": true,
+  "formal_acceptance_met": false,
+  "measured_collision_geometry": {
+    "verified_compiled_box_sizes": true,
+    "platform_collision_boxes": {
+      "start": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.4,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "middle": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.32,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.3,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gap1_range_m": [
+      0.10000000774860379,
+      0.10000000774860379
+    ],
+    "gap2_range_m": [
+      0.10000002861022939,
+      0.10000002861022939
+    ],
+    "samples": 528
+  }
+}

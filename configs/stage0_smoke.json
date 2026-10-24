@@ -1,0 +1,13 @@
+{
+  "task": "standing",
+  "seed": 0,
+  "num_envs": 32,
+  "episode_length_s": 8.0,
+  "velocity_x": [0.0, 0.0],
+  "hidden_dims": [256, 128],
+  "initial_std": 0.5,
+  "rollout_steps": 24,
+  "iterations": 8,
+  "save_interval": 4,
+  "purpose": "PPO integration smoke test, not task success evidence"
+}

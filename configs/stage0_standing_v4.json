@@ -1,0 +1,26 @@
+{
+    "task":  "standing",
+    "seed":  0,
+    "num_envs":  256,
+    "episode_length_s":  12,
+    "velocity_x":  [
+                       0,
+                       0
+                   ],
+    "hidden_dims":  [
+                        256,
+                        128
+                    ],
+    "initial_std":  0.5,
+    "rollout_steps":  24,
+    "iterations":  300,
+    "save_interval":  100,
+    "standing_alive_rate":  1,
+    "action_smoothing_scale":  0.2,
+    "standing_pose_std":  0.2,
+    "purpose":  "Resume v2 model_500; explicit quadratic root xyz angular-rate cost prevents yaw saturation; restore broad angular tracking kernel; fixed stability criteria",
+    "entropy_coef":  0.001,
+    "linear_tracking_std":  0.25,
+    "angular_tracking_std":  0.70710678118654757,
+    "root_angular_velocity_cost":  1
+}

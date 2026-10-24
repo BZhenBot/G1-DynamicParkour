@@ -1,0 +1,88 @@
+{
+  "rule_count": 16,
+  "rules": [
+    "private_key",
+    "github_token",
+    "aws_key",
+    "google_api",
+    "openai_like",
+    "slack_token",
+    "generic_secret_assignment",
+    "url_credentials",
+    "email",
+    "personal_linux_path",
+    "windows_path",
+    "mounted_windows_path",
+    "ipv4_private",
+    "china_phone",
+    "jwt",
+    "internal_hostname"
+  ],
+  "original_git": {
+    "utc": "2026-10-24T03:06:22.328422+00:00",
+    "objects": {
+      "blob": 2616,
+      "tree": 904,
+      "commit": 154
+    },
+    "scanned_bytes": 64376287,
+    "finding_counts": {
+      "personal_linux_path": 4664,
+      "windows_path": 1208,
+      "mounted_windows_path": 421,
+      "internal_hostname": 5244,
+      "china_phone": 16,
+      "email": 24,
+      "ipv4_private": 1
+    },
+    "raw_values_saved": false,
+    "rule_count": 16,
+    "all_objects_including_unreachable": true,
+    "no_original_history_exported": true
+  },
+  "public_worktree": {
+    "files_scanned": 137,
+    "bytes_scanned": 2087771,
+    "findings": {
+      "ipv4_private": 2,
+      "china_phone": 4,
+      "email": 3
+    },
+    "unresolved_findings": 0,
+    "reviewed_false_positives": [
+      {
+        "kind": "email",
+        "reason": "Python matrix @ operator without whitespace; not email"
+      },
+      {
+        "kind": "ipv4_private",
+        "reason": "NVIDIA curand package version; not network address"
+      },
+      {
+        "kind": "china_phone",
+        "reason": "Four decimal substrings in peak_normal_n / root_angular_velocity_l2 simulation fields; manually checked exact locations"
+      }
+    ]
+  },
+  "weights": {
+    "files": 10,
+    "raw_archive_and_decompressed_pickle_metadata_scanned": true,
+    "unresolved_findings": 0,
+    "email_false_positives": 5,
+    "reason": "Only compressed tensor bytes matched; no pickle metadata hit"
+  },
+  "history_policy": "No original objects or refs imported. Final new Git all-object scan is saved in local FINAL_VERIFICATION after commit.",
+  "limitations": [
+    "Custom pattern scanner, not gitleaks/trufflehog; no guarantee against every unknown secret format",
+    "High-entropy numeric tensor payloads are not classified as textual secrets",
+    "Private raw findings are not included in Git",
+    "Original source history privacy hits remain protected in the original repository, never published"
+  ],
+  "final_windows_scan_complete": true,
+  "windows_task_result": {
+    "qualified_successes": 0,
+    "episodes": 1,
+    "reason": "leg2:premature_target_contact",
+    "status": "repeatability_unresolved"
+  }
+}

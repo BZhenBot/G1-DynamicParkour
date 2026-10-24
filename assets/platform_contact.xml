@@ -1,0 +1,15 @@
+<mujoco model="periodic_platform_contact_regression">
+  <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81"/>
+  <worldbody>
+    <geom name="failure_floor" type="plane" size="3 3 .1" pos="0 0 -1"/>
+    <body name="target_platform" pos="0 0 .1">
+      <joint name="platform_y" type="slide" axis="0 1 0" range="-.2 .2"/>
+      <geom name="platform_surface" type="box" size=".5 .5 .1" mass="100" friction=".8 .005 .0001" rgba=".15 .35 .8 1"/>
+    </body>
+    <body name="payload" pos="0 .05 .261">
+      <freejoint name="payload_free"/>
+      <geom name="payload_box" type="box" size=".06 .06 .06" mass="1" friction=".8 .005 .0001" rgba=".8 .45 .2 1"/>
+    </body>
+  </worldbody>
+  <actuator><position name="platform_servo" joint="platform_y" kp="100000" kv="4000"/></actuator>
+</mujoco>

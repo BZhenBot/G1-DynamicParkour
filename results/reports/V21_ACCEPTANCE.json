@@ -1,0 +1,128 @@
+{
+  "status": "accepted_v21",
+  "goal_status": "active_v22_and_windows_delivery_pending",
+  "formal_run": "experiments/20261015T042909965266Z-v21-formal-frozen100-independent-route-acceptance-fb05ecb2",
+  "formal_audit": "experiments/20261015T050406558281Z-v21-formal100-independent-physics-659e641a/course_independent_audit.json",
+  "comparison": "experiments/20261015T050440258867Z-v21-formal100-v2-motion-comparison-3274b971/v21_motion_comparison.json",
+  "episodes": 100,
+  "qualified_successes": 80,
+  "success_rate": 0.8,
+  "quantitative_checks": {
+    "independent_qualified_success_rate_ge_70_percent": true,
+    "middle_dwell_reduction_ge_40_percent": true,
+    "joint_command_p95_step_reduced": true,
+    "joint_command_second_difference_reduced": true,
+    "actual_joint_position_second_difference_reduced": true,
+    "skill_switch_command_step_reduced": true
+  },
+  "motion_comparisons": {
+    "dwell_observed_seconds": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 12.66,
+      "candidate_median": 7.130000000000001,
+      "relative_reduction": 0.4368088467614534,
+      "bootstrap_95_percent_reduction_interval": [
+        0.42799999999999994,
+        0.4474097331240189
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    },
+    "command_delta_rms": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 0.5897961706959877,
+      "candidate_median": 0.24220914099592775,
+      "relative_reduction": 0.589334158087006,
+      "bootstrap_95_percent_reduction_interval": [
+        0.5839059827274158,
+        0.594453259039882
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    },
+    "command_delta_joint_p95": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 1.5706752419471732,
+      "candidate_median": 0.5868610866367815,
+      "relative_reduction": 0.6263638268664329,
+      "bootstrap_95_percent_reduction_interval": [
+        0.6211060690103823,
+        0.6349012925734895
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    },
+    "command_second_difference_rms": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 0.7463551169320978,
+      "candidate_median": 0.2483208316182951,
+      "relative_reduction": 0.6672886324689231,
+      "bootstrap_95_percent_reduction_interval": [
+        0.6596943859658473,
+        0.6698439397757665
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    },
+    "joint_position_second_difference_rms_rad": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 0.04485585766570596,
+      "candidate_median": 0.022048193336503333,
+      "relative_reduction": 0.5084656835497312,
+      "bootstrap_95_percent_reduction_interval": [
+        0.5025342756450271,
+        0.513561880155799
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    },
+    "body_tilt_rms_deg": {
+      "baseline_qualified_routes": 77,
+      "candidate_qualified_routes": 80,
+      "baseline_median": 6.986145117158876,
+      "candidate_median": 7.909391066076379,
+      "relative_reduction": -0.13215384642524697,
+      "bootstrap_95_percent_reduction_interval": [
+        -0.15409641610069613,
+        -0.11395890337861525
+      ],
+      "resampling_unit": "独立完整路线，V2/V2.1未配对；不把时序采样点当独立样本"
+    }
+  },
+  "skill_switch_comparison": {
+    "baseline_route_mean_switch_delta_rms_median": 0.6097347800976668,
+    "candidate_route_mean_switch_delta_rms_median": 0.3394208238350066,
+    "relative_reduction": 0.44333038738476016,
+    "scope": "先每条完整路线聚合，再跨独立路线取中位数，避免技能切换数量不同造成伪独立"
+  },
+  "failure_counts": {
+    "leg1:returned_to_start_after_target": 1,
+    "fallen": 15,
+    "middle_preparation_timeout": 2,
+    "leg1:other_support": 2
+  },
+  "original_physical_criteria_preserved": true,
+  "video_run": "experiments/20261015T050436059862Z-v21-paired-v2-seed70000-replay-4e8b3ed4",
+  "video_audit": "experiments/20261015T050621960459Z-v21-paired-demo-portable-relative-physics-record-61deb7f0/course_independent_audit.json",
+  "same_frozen_candidate_control_config_and_source_verified": true,
+  "comparison_video": "experiments/20261015T050639025809Z-v21-paired-seed70000-original-speed-video-237abf71/V2_vs_V21_original_speed.mp4",
+  "visual_review": "reports/V21_VIDEO_VISUAL_QA.md",
+  "body_tradeoff": "整体倾斜RMS+13.2%；准备roll/pitch角速度逐步变化RMS约下降38.3%，不声称所有幅度/频段改善",
+  "new_ppo_seconds": 2155.56957921,
+  "windows_final_delivery": "待V2.2完成后复制和实际校验",
+  "proof_sha256": {
+    "experiments/20261015T043331263760Z-v21-formal100-terminal-postprocess-orchestration-4e15451e/postprocess_receipt.json": "4300efa4ace05b460f6605802b4b29d43a6cb6632180bd95a9a49509022283c5",
+    "experiments/20261015T050406558281Z-v21-formal100-independent-physics-659e641a/course_independent_audit.json": "18bde56161dbec83911daccc94c4632963b4290b718d0bfd0326bd2f54fc08b0",
+    "experiments/20261015T050440258867Z-v21-formal100-v2-motion-comparison-3274b971/v21_motion_comparison.json": "fdd51e8b1451bc91c4be630345048c0ec18606525b3d38896f43a4af5fae1968",
+    "experiments/20261015T050621960459Z-v21-paired-demo-portable-relative-physics-record-61deb7f0/course_independent_audit.json": "5000eba9f116334ceadafca9901489c2477ab10139b17f9870b6027b985374db",
+    "experiments/20261015T050436059862Z-v21-paired-v2-seed70000-replay-4e8b3ed4/course_evaluation_config.json": "6a0f9a87d8006731b13976f94e69299d728971320646d7c8421509516449f23e",
+    "experiments/20261015T042909965266Z-v21-formal-frozen100-independent-route-acceptance-fb05ecb2/course_evaluation_config.json": "09b23107c000a4706a11f272a1874d717f66ff10871131ce23cc0d20fd90f42f",
+    "experiments/20261015T042909965266Z-v21-formal-frozen100-independent-route-acceptance-fb05ecb2/metadata.json": "c2e98e6fae18e0d93cd57581f397bf645a37b560b8f31205b7f1d525c4e237eb",
+    "experiments/20261015T050436059862Z-v21-paired-v2-seed70000-replay-4e8b3ed4/metadata.json": "add574a83c9984e691721a2cac6f77d2bfbf7592456d0f938b65e4f143ee5829",
+    "experiments/20261015T050639023939Z-v21-paired-source-real-video-decode-b6538cc7/video_validation.json": "11ee7de6d0ae2a2a97010f4cba7c42d30be951ab38a0eb9ca4a054f16a8075b0",
+    "experiments/20261015T050639025809Z-v21-paired-seed70000-original-speed-video-237abf71/comparison_video_manifest.json": "95551fb81661a3ca962141fe2648c10aa381fadb3338b1352d391c1e63b10613",
+    "experiments/20261015T050654761416Z-v21-paired-comparison-real-decode-39fe50a6/video_validation.json": "66c70a92b0173db4d2156c8fe927994f8442fbf0b689dd36193e5acfd91f5cd3",
+    "reports/V21_VIDEO_VISUAL_QA.md": "ea986d9daecf43bad7bd136b04f7b48e7e63df0933d867d5643d7cdd61add28f",
+    "experiments/20261015T050508357720Z-v21-formal-qualified-preparation-body-diagnostic-04fd86fb/preparation_body_diagnostic.json": "126caa053b4e1114fc6b401f7349a74955bda2ffadb802fcf6f79cc5bd3bd7ab"
+  }
+}

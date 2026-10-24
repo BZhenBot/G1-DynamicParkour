@@ -1,0 +1,32 @@
+[
+  {
+    "name": "mjlab-apache",
+    "url": "https://raw.githubusercontent.com/mujocolab/mjlab/v1.6.0/LICENSE",
+    "sha256": "8ca04d9dbbccd20f0f1842fb33e13949f9e57064b150dad36af8e7a751ca3321",
+    "status": "retrieved"
+  },
+  {
+    "name": "rsl-rl-bsd",
+    "url": "https://raw.githubusercontent.com/leggedrobotics/rsl_rl/v5.4.2/LICENSE",
+    "sha256": "3f58bb6b9272e416b8ccbe65889463f75a2fdf66e0e5722513f8622fb23dc778",
+    "status": "retrieved"
+  },
+  {
+    "name": "g1-comparison-bsd",
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/main/unitree_g1/LICENSE",
+    "sha256": "98335465f43a20b5850e4651db6e74c4aa1e9fc8e8813d38f345178045c0da50",
+    "status": "retrieved"
+  },
+  {
+    "name": "mujoco-apache",
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.11.0/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "status": "retrieved"
+  },
+  {
+    "name": "warp-apache",
+    "url": "https://raw.githubusercontent.com/NVIDIA/warp/v1.14.0/LICENSE.md",
+    "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "status": "retrieved"
+  }
+]

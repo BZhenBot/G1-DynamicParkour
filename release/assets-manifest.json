@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "publication_status": "local_review_only_not_uploaded",
+  "allowed_assets": [
+    {
+      "name": "g1-dynamicparkour-v2.2-weights.zip",
+      "sha256": "80d45f024e218c127cc6eb5a7a9231c752445f2114a17d46c698a5d3195b370a",
+      "bytes": 16418251,
+      "kind": "trusted_original_checkpoint_parameters",
+      "license": "MIT with separate third-party notices"
+    }
+  ],
+  "withheld_assets": [
+    {
+      "kind": "full_rendered_videos",
+      "status": "withheld_pending_exact_robot_asset_rights",
+      "count": 3
+    }
+  ],
+  "no_remote_url": true
+}

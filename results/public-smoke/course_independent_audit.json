@@ -1,0 +1,180 @@
+{
+  "audit_pass": true,
+  "scope": "独立重算每段稳定/事件、200Hz三表面安全及连续AIR、两着陆窗口、平台轨迹、reset/时间/动作/权重/日志；audit_pass表示证据一致，qualified_success必须额外满足两个AIR所在完整腾空各16连续物理无支持样本和3cm物理高度增加，旧事件前截断统计保留；不以reward判成功",
+  "run": "experiments/20261024T031232995004Z-public-clean-minimal-ddd6bbf2",
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 98000,
+      "scalar_success": true,
+      "qualified_success": true,
+      "time_budget_pass": true,
+      "second_skill_start_s": 6.74,
+      "physical_failure_200hz": false,
+      "two_airborne_events_verified_200hz": true,
+      "airborne_200hz_checks": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 59,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 18,
+          "unsupported_interval_start_s": 0.53,
+          "unsupported_interval_end_s": 0.8250000000000001,
+          "last_dual_source_root_height_m": 0.7765346765518188,
+          "physical_root_height_gain_m": 0.09774535894393921,
+          "verified_200hz": true
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.4,
+          "protocol": "complete_contiguous_physics_flight_v2",
+          "maximum_consecutive_unsupported_physics_samples": 55,
+          "minimum_required_samples": 16,
+          "legacy_event_prefix_maximum_samples": 20,
+          "unsupported_interval_start_s": 7.3,
+          "unsupported_interval_end_s": 7.575,
+          "last_dual_source_root_height_m": 0.7537389397621155,
+          "physical_root_height_gain_m": 0.10819965600967407,
+          "verified_200hz": true
+        }
+      ],
+      "tracking_pass": true,
+      "tracking": {
+        "max_position_error_m": 5.691242777697281e-05,
+        "max_velocity_error_mps": 0.0038016954619082208
+      },
+      "airborne_events": [
+        {
+          "leg_id": 0,
+          "source": "start",
+          "target": "middle",
+          "phase": "airborne",
+          "time_s": 0.62
+        },
+        {
+          "leg_id": 1,
+          "source": "middle",
+          "target": "end",
+          "phase": "airborne",
+          "time_s": 7.4
+        }
+      ],
+      "landings": {
+        "middle": {
+          "samples": 40,
+          "impulse_ns": 106.30315895080568,
+          "peak_normal_n": 1385.63525390625,
+          "window_complete": true
+        },
+        "end": {
+          "samples": 40,
+          "impulse_ns": 107.44916364669801,
+          "peak_normal_n": 1525.353515625,
+          "window_complete": true
+        }
+      },
+      "physics_samples": 2096,
+      "failure_reason": null
+    }
+  ],
+  "qualified_successes": 1,
+  "episodes_count": 1,
+  "independent_unique_episode_seeds": 1,
+  "input_config_matches_source_snapshot": true,
+  "phase_bin_counts": {
+    "0": 1
+  },
+  "seeded_initial_phase_and_mid_episode_phase_constancy_checked": true,
+  "qualified_success_rate": 1.0,
+  "maximum_native_crosscheck_error_n": 6.103515625e-05,
+  "input_sha256": {
+    "metadata.json": "e4cc97814f6b419a551619d535dd43db6cdb388c50be2f3e1bd5c2f508c6d07b",
+    "course_samples.jsonl": "29a52f92e7045b777cb69f0c0985e06e6a70031c46123026e3429c2555f7ec0d",
+    "course_physics_samples.jsonl": "8fefbb1c6714b56ab6ab2fd863821f1c4d995bfea4cff3a11ce4a7a7c5e190f2",
+    "course_evaluation.json": "bbc61f20e2d4ae86b55badbb9c4d1a9363715ab82c85a6568fbf0d3ef4440ec2",
+    "course_contact_manifest.json": "bb58a3d599fb54828f7c53e4f832b577597afbff49624c4e3b2e305ed7929fa6"
+  },
+  "formal_protocol_receipt": null,
+  "preparation_actor103_current_feature_checks": 84,
+  "handoff_capture_proxy_check_applicable": true,
+  "formal_acceptance_met": false,
+  "measured_collision_geometry": {
+    "verified_compiled_box_sizes": true,
+    "platform_collision_boxes": {
+      "start": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.4,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "middle": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.32,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "end": {
+        "geom_type": 6,
+        "half_size_m": [
+          0.3,
+          0.5,
+          0.1
+        ],
+        "local_position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gap1_range_m": [
+      0.10000000774860379,
+      0.10000000774860379
+    ],
+    "gap2_range_m": [
+      0.10000002861022939,
+      0.10000002861022939
+    ],
+    "samples": 524
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "status":  "complete_v21_and_v22_10cm_and_actual_windows_delivery",
+    "utc":  "2026-10-15T16:07:13.0595502Z",
+    "v21_successes":  80,
+    "v21_episodes":  100,
+    "v22_successes":  76,
+    "v22_episodes":  100,
+    "v22_gaps_m":  [
+                       0.1,
+                       0.1
+                   ],
+    "new_ppo_seconds":  3070.672079588,
+    "actual_windows_target":  "${WINDOWS_ROOT}\\exports\\G1-DynamicParkour-V2.2",
+    "windows_verified":  true,
+    "goal_complete":  true,
+    "receipt":  "reports/V21_V22_WINDOWS_DELIVERY.json"
+}

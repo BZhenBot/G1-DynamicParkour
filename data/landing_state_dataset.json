@@ -1,0 +1,296 @@
+{
+  "scope": "Read-only actual landing-state dataset from unchanged physical frozen PPO, not a reset/recovery success experiment",
+  "snapshots": [
+    {
+      "filename": "landing_state_ep1_first_target_after_airborne.json",
+      "sha256": "21dca7904685f3ddabecf4daf15bdb1b4ef901ffcb4f9d06d143fe615a65dfc2",
+      "episode": 1,
+      "evaluation_episode": 0,
+      "evaluation_seed": 19000,
+      "event": "first_target_after_airborne",
+      "time_s": 0.8200000000000001
+    },
+    {
+      "filename": "landing_state_ep1_first_dual_target_after_airborne.json",
+      "sha256": "a45b3933e0d7e1b200986456b15e596dfcfe2b65dc8a5ccd58d1415a8a9657f2",
+      "episode": 1,
+      "evaluation_episode": 0,
+      "evaluation_seed": 19000,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep2_first_target_after_airborne.json",
+      "sha256": "ab32be6d42c87e9f62c2c2c5888f43608cf1db3f633da354f1f13ed8590fe694",
+      "episode": 2,
+      "evaluation_episode": 1,
+      "evaluation_seed": 19001,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep2_first_dual_target_after_airborne.json",
+      "sha256": "317a195b67790ce6b39eb3ec8542cc148e5dd43cbf1aa0f8a1b82025d12c9fd6",
+      "episode": 2,
+      "evaluation_episode": 1,
+      "evaluation_seed": 19001,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep3_first_target_after_airborne.json",
+      "sha256": "fbc7503f1dc0823d3305dd69f725a86f67077cd50b534bfb0bd983afb070db3e",
+      "episode": 3,
+      "evaluation_episode": 2,
+      "evaluation_seed": 19002,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep3_first_dual_target_after_airborne.json",
+      "sha256": "1a3b84b2be3015fa24a9866930dd1b440a89308493dbd488d253f6f25f69fe20",
+      "episode": 3,
+      "evaluation_episode": 2,
+      "evaluation_seed": 19002,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.88
+    },
+    {
+      "filename": "landing_state_ep4_first_target_after_airborne.json",
+      "sha256": "adc043b2327688ec18b45ed776732090cd1d1840fe4bf9fe50a2992fdcda91ee",
+      "episode": 4,
+      "evaluation_episode": 3,
+      "evaluation_seed": 19003,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep4_first_dual_target_after_airborne.json",
+      "sha256": "8275bc47755eb4eba6535e0b194a42ced1a72ed15d4ce290affc41e90a9fe874",
+      "episode": 4,
+      "evaluation_episode": 3,
+      "evaluation_seed": 19003,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep5_first_target_after_airborne.json",
+      "sha256": "46cfae86c54906570c4c26dffcc3a67a37c99f3acef3f28fc82d9c52ed93d891",
+      "episode": 5,
+      "evaluation_episode": 4,
+      "evaluation_seed": 19004,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep5_first_dual_target_after_airborne.json",
+      "sha256": "dbb422d4b6ce8b4d71da256c14a599ffe9127d234756b76b01e16d5d08b1ca76",
+      "episode": 5,
+      "evaluation_episode": 4,
+      "evaluation_seed": 19004,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep6_first_target_after_airborne.json",
+      "sha256": "5031f03ef723ed8cecc50c17f8a1828c1fda2775482d6bd60dddc242f1b88735",
+      "episode": 6,
+      "evaluation_episode": 5,
+      "evaluation_seed": 19005,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep6_first_dual_target_after_airborne.json",
+      "sha256": "9f0fae953f9dbfe080f7c648241af91014a255f6e2dbe68e43105481064befaf",
+      "episode": 6,
+      "evaluation_episode": 5,
+      "evaluation_seed": 19005,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.92
+    },
+    {
+      "filename": "landing_state_ep7_first_target_after_airborne.json",
+      "sha256": "dd96816fde66d7240643f0bf7dd2d1514c7247f031ae032ee7ce5b11dbf0d41d",
+      "episode": 7,
+      "evaluation_episode": 6,
+      "evaluation_seed": 19006,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep7_first_dual_target_after_airborne.json",
+      "sha256": "eb18af98cc4951ede7da5c07805f283a621149ffd94d7e5df40136e370227f34",
+      "episode": 7,
+      "evaluation_episode": 6,
+      "evaluation_seed": 19006,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep8_first_target_after_airborne.json",
+      "sha256": "4180f5572ab3b091084df81ac8e99dbe2bb771b5a46874a2f312e3c7d82eca3d",
+      "episode": 8,
+      "evaluation_episode": 7,
+      "evaluation_seed": 19007,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep8_first_dual_target_after_airborne.json",
+      "sha256": "f3a33b2af96b4127bb1b88ae7f376fd3cc2fa1f2b1bb00cea47943ac4d6de06a",
+      "episode": 8,
+      "evaluation_episode": 7,
+      "evaluation_seed": 19007,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep9_first_target_after_airborne.json",
+      "sha256": "ac631d5b874dc1653f531a7c2f466aec264b09ed449e07e282c76de74ee1bc6c",
+      "episode": 9,
+      "evaluation_episode": 8,
+      "evaluation_seed": 19008,
+      "event": "first_target_after_airborne",
+      "time_s": 0.8200000000000001
+    },
+    {
+      "filename": "landing_state_ep9_first_dual_target_after_airborne.json",
+      "sha256": "d84b138bb5f792a7b906fc32a5dfa6dd2a1fbfba9bf32b3c549471e479066c9b",
+      "episode": 9,
+      "evaluation_episode": 8,
+      "evaluation_seed": 19008,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep10_first_target_after_airborne.json",
+      "sha256": "cf910785bc1baf5eec97ad5aecf4f47c24295e8202197dde3b29c8d229525511",
+      "episode": 10,
+      "evaluation_episode": 9,
+      "evaluation_seed": 19009,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep10_first_dual_target_after_airborne.json",
+      "sha256": "84eda841a30de84a4058b573409947e3fbb1a301aedfbf0b1e9e79b7e5f3d327",
+      "episode": 10,
+      "evaluation_episode": 9,
+      "evaluation_seed": 19009,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep11_first_target_after_airborne.json",
+      "sha256": "89f87a4f5e3a91027d549eef6c2e72788037af10f9e0cfbdee18dce33985fcba",
+      "episode": 11,
+      "evaluation_episode": 10,
+      "evaluation_seed": 19010,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep11_first_dual_target_after_airborne.json",
+      "sha256": "63bd54235322a9f35aae06c72ca92b77593b2386ffbd78530dd70caa58b5603b",
+      "episode": 11,
+      "evaluation_episode": 10,
+      "evaluation_seed": 19010,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.88
+    },
+    {
+      "filename": "landing_state_ep12_first_target_after_airborne.json",
+      "sha256": "dc6ffe02a2b6a4d00a7845efa272b70656c7fff855c8ee8368998ed47b694085",
+      "episode": 12,
+      "evaluation_episode": 11,
+      "evaluation_seed": 19011,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep12_first_dual_target_after_airborne.json",
+      "sha256": "7dc9bb56f700c1b8ea97dd15fb8bafd1ee143f6c6f614bc7c847f86b71254383",
+      "episode": 12,
+      "evaluation_episode": 11,
+      "evaluation_seed": 19011,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep13_first_target_after_airborne.json",
+      "sha256": "e6b75e789c4bcb9da41297a7905c50a7e54f735c3a008b84fb3f67914df618b2",
+      "episode": 13,
+      "evaluation_episode": 12,
+      "evaluation_seed": 19012,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep13_first_dual_target_after_airborne.json",
+      "sha256": "04862e879e21dd281b715a9166258daa8d45c244e25dee1eb8b50ab89b9e403f",
+      "episode": 13,
+      "evaluation_episode": 12,
+      "evaluation_seed": 19012,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep14_first_target_after_airborne.json",
+      "sha256": "f554b09ef0ba70ea7c1de28638abd0769e7caf12a698999a3536ced59609c456",
+      "episode": 14,
+      "evaluation_episode": 13,
+      "evaluation_seed": 19013,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep14_first_dual_target_after_airborne.json",
+      "sha256": "83c3aa106cab24e1261d7d0bb0dd849afd786b34351a8ea54e7f40fe30d8a2b3",
+      "episode": 14,
+      "evaluation_episode": 13,
+      "evaluation_seed": 19013,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    },
+    {
+      "filename": "landing_state_ep15_first_target_after_airborne.json",
+      "sha256": "06ebeb65e5b2d2dee11018a1e71b3f1c9f6d83385f3a6774321f5b0349d7f979",
+      "episode": 15,
+      "evaluation_episode": 14,
+      "evaluation_seed": 19014,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep15_first_dual_target_after_airborne.json",
+      "sha256": "f34231e62366f61e9ed909bdab7832d502678e2beb6b5ddcf7911bd738c45795",
+      "episode": 15,
+      "evaluation_episode": 14,
+      "evaluation_seed": 19014,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.88
+    },
+    {
+      "filename": "landing_state_ep16_first_target_after_airborne.json",
+      "sha256": "4d18b5bd0263fb1e90bdf7d8465b9f0f2980ec9b5051e41cd57e88adec9bb06f",
+      "episode": 16,
+      "evaluation_episode": 15,
+      "evaluation_seed": 19015,
+      "event": "first_target_after_airborne",
+      "time_s": 0.84
+    },
+    {
+      "filename": "landing_state_ep16_first_dual_target_after_airborne.json",
+      "sha256": "623be5d6a7606244a8b0aada1764c90a0a2e64bfc2e0c94c12808101a6331aa6",
+      "episode": 16,
+      "evaluation_episode": 15,
+      "evaluation_seed": 19015,
+      "event": "first_dual_target_after_airborne",
+      "time_s": 0.9
+    }
+  ],
+  "exact_warmstart_replay": "unverified",
+  "reset_curriculum": "This new dataset has not been used for training at collection time",
+  "collect_current_stable_states": false
+}

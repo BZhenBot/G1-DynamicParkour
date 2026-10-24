@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "source_commit": "76f70239b707d1b33b29ec823ab56352692ce922",
+  "weights": [
+    {
+      "path": "experiments/20261008T154302611628Z-stage0-standing-v4-f1f2216e/ppo/model_799.pt",
+      "sha256": "37db9eb545e5dcc983531c10e2d62f5466ae2ef9cd1fc304462c525ee89a5ecf",
+      "bytes": 1508339,
+      "roles": [
+        {
+          "config": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+          "field": "standing_prior_checkpoint"
+        },
+        {
+          "config": "configs/stage3_recovery_finetune_seed0_v3.json",
+          "field": "standing_prior_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261009T072722375357Z-stage2-target-landing-v1-974b34d5/ppo/model_200.pt",
+      "sha256": "fd94dd661881493c1a633044014b95288e46f6a030d4fc61b1836871aba43dc5",
+      "bytes": 1846247,
+      "roles": [
+        {
+          "config": "configs/stage3_composed_jump_servo_bandwidth_v2.json",
+          "field": "jump_prior_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261009T131057156501Z-stage2-bounded-coordinate-v1-409f8d44/ppo/model_506.pt",
+      "sha256": "8f835a5fadaaf2848e42a7e28d793dc5f25f220f85f857e281cdde0d2e9b0018",
+      "bytes": 2137627,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "jump_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "jump_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "jump_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261010T051919125635Z-stage3-recovery-finetune-seed0-v3-787be66f/ppo/model_99.pt",
+      "sha256": "f30f533997f70cba3597b788736ee4353ecb68d82d0c70c3feff5306ea390fa0",
+      "bytes": 1867355,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "recovery_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261014T050121964612Z-v2-locomotion-turn-finetune-fixed200-aaa6766a/ppo/model_199.pt",
+      "sha256": "b2ad52f2d068f987a960ffc24685a154ad4c2c6ff2885d983247b2c4b6ce048e",
+      "bytes": 1514675,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "alignment_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261014T121736926186Z-v2-prepared-capture-contract-fixed100-22618a24/ppo/model_99.pt",
+      "sha256": "320e2020f4280b523a34d7c2590b29962ee6749656aecdb82ef7c8e38599e3ed",
+      "bytes": 2137537,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "second_jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "second_jump_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261008T170306998839Z-stage1-static-stop-v1-c8f7e6c8/ppo/model_2895.pt",
+      "sha256": "aa2e876348660af80f39db730b30a73a8dae541914cbcdcd046bdc0338cbdfd9",
+      "bytes": 1508405,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "position_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "position_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261014T124641149888Z-v2-current-capture100-end-fixed200-28083c4d/ppo/model_199.pt",
+      "sha256": "c73d8d38301cfd1a607a176ed985829714d87a74f2ba87b10af02f1818e312fd",
+      "bytes": 1867432,
+      "roles": [
+        {
+          "config": "configs/v2_course_formal100_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "end_recovery_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "end_recovery_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261015T034634495245Z-v21-torso-stable-preparation-fixed200-5a86fbe4/ppo/model_199.pt",
+      "sha256": "77bb7b97b7388142c96bedc5f158b4671e3e5a3136ccdab71e9f655e090acaca",
+      "bytes": 1533107,
+      "roles": [
+        {
+          "config": "configs/v21_course_torso199_capture020_v1.json",
+          "field": "alignment_checkpoint"
+        },
+        {
+          "config": "configs/v21_course_formal100_v1.json",
+          "field": "alignment_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "alignment_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "alignment_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "alignment_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "alignment_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    },
+    {
+      "path": "experiments/20261012T050638742882Z-gap015-qualified-handoff-subtask-finetune100-v1-79123cee/ppo/model_99.pt",
+      "sha256": "32c051d8998e2e4ae0464d12a8ff70ab7206944ed25125cf322ebc8e982a3d85",
+      "bytes": 2137537,
+      "roles": [
+        {
+          "config": "configs/v22_course_gap005_width080_jump015_v1.json",
+          "field": "jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_jump015_v1.json",
+          "field": "jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_gap010_limited_middle064_jump015_v1.json",
+          "field": "jump_checkpoint"
+        },
+        {
+          "config": "configs/v22_course_formal100_gap010_limited064_v1.json",
+          "field": "jump_checkpoint"
+        }
+      ],
+      "license": "MIT (original trained parameters; third-party framework/model rights not relicensed)",
+      "distribution_status": "allowed_original_weights_user_confirmed",
+      "archive": "g1-dynamicparkour-v2.2-weights.zip"
+    }
+  ],
+  "unique_weights": 10,
+  "extract_root": "repository root; preserve experiments/... paths",
+  "trusted_checkpoints_only": true,
+  "note": "Six runtime roles plus constructor priors and V2 comparison. Training ancestry is not a complete historical checkpoint archive."
+}
